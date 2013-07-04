@@ -23,7 +23,7 @@ module ActiveAdmin
     # Load paths for admin configurations. Add folders to this load path
     # to load up other resources for administration. External gems can
     # include their paths in this load path to provide active_admin UIs
-    setting :load_paths, [File.expand_path('app/admin', Rails.root)]
+    setting :load_paths, [File.expand_path('app/sing', Rails.root)]
 
     # The default number of resources to display on index pages
     inheritable_setting :default_per_page, 30
