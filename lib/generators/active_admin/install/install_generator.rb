@@ -18,11 +18,11 @@ module ActiveAdmin
       end
 
       def setup_directory
-        empty_directory "app/sing"
-        template 'dashboard.rb', 'app/sing/dashboard.rb'
+        empty_directory "app/admin"
+        template 'dashboard.rb', 'app/admin/dashboard.rb'
         if options[:users].present?
           @user_class = name
-          template 'admin_user.rb.erb', "app/sing/#{name.underscore}.rb"
+          template 'admin_user.rb.erb', "app/admin/#{name.underscore}.rb"
         end
       end
 
